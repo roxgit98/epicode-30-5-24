@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #666666;
+}
+
+div {
+  width: 150px;
+  height: 120px;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 43%;
+  gap: 45px;
+  justify-content: center;
+  position: relative;
+  top: 240px;
+  left: 520px;
+}
+
+.giallo {
+  background: rgb(238, 238, 186);
+  background: linear-gradient(
+    180deg,
+    rgba(238, 238, 186, 1) 0%,
+    rgba(238, 238, 186, 1) 88%,
+    rgba(119, 119, 80, 1) 100%
+  );
+  rotate: 339deg;
+  border: solid 1px #eeeeba;
+  transition: scale 300ms;
+}
+
+.verde {
+  background: rgb(189, 229, 192);
+  background: linear-gradient(
+    180deg,
+    rgba(189, 229, 192, 1) 0%,
+    rgba(189, 229, 192, 1) 88%,
+    rgba(93, 140, 96, 1) 100%
+  );
+  rotate: 7deg;
+  border: solid 1px #bde5c0;
+  transition: scale 300ms;
+}
+
+.viola {
+  background: rgb(188, 189, 226);
+  background: linear-gradient(
+    180deg,
+    rgba(188, 189, 226, 1) 0%,
+    rgba(188, 189, 226, 1) 88%,
+    rgba(116, 117, 162, 1) 100%
+  );
+  rotate: 346deg;
+  border: solid 1px #bcbde2;
+  transition: scale 300ms;
+}
+
+h1,
+p {
+  position: relative;
+  top: 31px;
+  padding: 3%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.giallo:hover {
+  rotate: 0deg;
+  scale: 1.5;
+  box-shadow: -1px 6px 20px 7px #000000;
+  z-index: 1;
+}
+
+.verde:hover {
+  rotate: 0deg;
+  scale: 1.5;
+  box-shadow: -1px 6px 20px 7px #000000;
+  z-index: 1;
+}
+
+.viola:hover {
+  rotate: 0deg;
+  scale: 1.5;
+  box-shadow: -1px 6px 20px 7px #000000;
+  z-index: 1;
+}
